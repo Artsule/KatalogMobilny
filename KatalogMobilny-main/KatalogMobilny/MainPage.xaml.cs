@@ -1,30 +1,10 @@
-﻿namespace katalogMobilny
+namespace katalogMobilny
 {
-    public partial class MainPage : ContentPage
+    public partial class AppShell : Shell
     {
-        int count = 0;
-
-        public MainPage()
+        public AppShell()
         {
             InitializeComponent();
-            //alternatywne tworzenie elementów interfejsu zamiast
-            //xamla - tego nie robimy!
-            //Label etykieta = new Label();
-            //etykieta.Text = "Procesor";
-            //etykieta.Parent = MainLayout;
         }
-
-        private void PokazClicked(object sender, EventArgs e)
-        {
-            EtykietaWyniku.Text = "Wybrano procesor";
-        }
-
-        /*
-        private void CounterBtn_Clicked(object sender, EventArgs e)
-        {
-            count++;
-            EtykietaPowitania.Text = $"Kliknięto {count} razy";
-        }
-        */
     }
 }
